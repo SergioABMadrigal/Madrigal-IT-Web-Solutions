@@ -1,0 +1,5 @@
+/* line below makes it so that the link is active, then the hr display becomes block. Changes from hidden in the className in Navbar.jsx */
+
+a.active hr {
+  display: block;
+}
