@@ -1,23 +1,22 @@
-import React from 'react'
 import { assets } from '../assets/assets'
 import { FaYoutube, FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <div>
-        <div className='flex flex-col sm:grid grid-cols-[8fr_1fr_1fr] gap-14 my-10 px-5 mt-10 text-sm'>
-            <div>
-                <img src={assets.martial_arts_logo} className='mb-2 w-60' alt="" />
+        <div className='flex flex-col sm:grid grid-cols-2 gap-14 my-10 px-5 mt-10 text-sm '>
+            <div className='flex flex-row gap-5'>
+                <img src={assets.logo2_png} className='mb-2 max-w-30 max-h-30 rounded-full' alt="" />
                 <p className='w-full md:w-2/3 text-gray-600'>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat magni maxime, perferendis nemo impedit sint quibusdam nesciunt accusantium voluptatem cupiditate vitae eveniet culpa quod corporis provident alias? Laboriosam, dicta nostrum.
                 </p>
             </div>
 
-            <div>
-                <p className='text-x1 font-medium mb-5'>GET IN TOUCH</p>
+            <div className='flex flex-col gap-2'>
+                <p className='text-lg font-medium mb-5'>GET IN TOUCH</p>
                 <ul className='flex flex-col gap-1 text-gray-600'>
                     <li>212-456-7890</li>
-                    <li>contact@Johnsonsselfdefence.com</li>
+                    <li>contact@Madrigal-IT.com</li>
                 </ul>
             </div>
 
@@ -36,7 +35,7 @@ const Footer = () => {
         </div>
         <div>
             <hr />
-            <p className='py-5 text-sm text-center'>Copyright 2025@ JohnsonsSelfDefence.com - All rights Reserved</p>
+            <p className='py-5 text-sm text-center bg-gradient-to-bl from-[#3f4d55] to-[#1f1e26] text-white'>Copyright 2025@ Madrigal-IT.com - All rights Reserved</p>
         </div>
     </div>
   )

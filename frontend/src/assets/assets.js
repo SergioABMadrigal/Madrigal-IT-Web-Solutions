@@ -18,6 +18,11 @@ import razorpay_logo from './razorpay_logo.png'
 import stripe_logo from './stripe_logo.png'
 import cross_icon from './cross_icon.png'
 import martial_arts_logo from './martial_arts_logo.png'
+import menu_png from './menu.png'
+import banner_png from './banner.png'
+import logo1_png from './logo1.png'
+import logo2_png from './logo2.png'
+
 
 export const assets = {
     logo,
@@ -38,5 +43,9 @@ export const assets = {
     razorpay_logo,
     stripe_logo,
     cross_icon,
-    martial_arts_logo
+    martial_arts_logo,
+    menu_png,
+    banner_png,
+    logo1_png,
+    logo2_png,
 }
