@@ -7,12 +7,14 @@ const Hero = () => {
         
         {/* Hero Left Side */}
         <div className='w-full sm:w-1/2 flex items-center py-10 sm:py-0' >
-            
+          <div className='p-5'>
             <div className='p-5'>
                 <h1 className='text-2xl sm:text-xl font-semibold mb-5'> Welcome to <b>Madrigal IT</b></h1>
-                <p className='text-gray-600'>  <strong>Contact us for more information!</strong></p>
+                <p className='text-gray-600 mb-1'> We provide websites to small businesses at competitive pricing. All you have to worry about is telling your customers you have a new website! </p>
+                <p className='text-gray-600 flex justify-end'> <strong>Contact us for more information!</strong></p>
             </div>
 
+          </div>
         </div>
         
         {/* Hero Right Side */}
