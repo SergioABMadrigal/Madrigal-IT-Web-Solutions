@@ -22,6 +22,7 @@ import menu_png from './menu.png'
 import banner_png from './banner.png'
 import logo1_png from './logo1.png'
 import logo2_png from './logo2.png'
+import Error_404_jpeg from './Error_404.jpeg'
 
 
 export const assets = {
@@ -48,4 +49,5 @@ export const assets = {
     banner_png,
     logo1_png,
     logo2_png,
+    Error_404_jpeg,
 }

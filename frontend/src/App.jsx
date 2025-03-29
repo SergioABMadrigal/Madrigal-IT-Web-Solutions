@@ -7,6 +7,7 @@ import Contact from './Pages/Contact';
 import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Solutions from './Pages/Solutions';
+import Error404 from './Pages/Error404';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/solutions" element={<Solutions />} />
+        <Route path="/*" element={<Error404 />} />
       </Routes>
     </div>
     <Footer />
