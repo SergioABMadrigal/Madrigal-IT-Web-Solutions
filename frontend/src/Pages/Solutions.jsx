@@ -9,11 +9,17 @@ const Solution = () => {
       <div className="flex flex-col gap-4 w-2/3 text-center">
         <p>Your content goes here.</p>
         <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
+          <li>Professional Websites bring in and hold customers.</li>
+          <li>We manage the website in a Virtual Private Network. The server is fully under our control.</li>
+          <li>Security updates and patches are included.</li>
+          <li>Search Engine Optimizatio is conducted INSIDE the code to ensure fast loading times and Search Engine compatability</li>
+          <li>We use our own templates, with higher customization than DIY paid sites.</li>
+          <li>Real Domains used. We search, buy, and connect the domain name for you. The Domain name is YOURS to transfer if needed.</li>
+          <li>Our websites are optomized for mobile use at no extra cost.</li>
+          <li>We implement SSL certificates at no extra cost.</li>
+          <li>Continuous research from us means more affordable features to come.</li>
         </ul>
-        <p>Additional paragraph for more information.</p>
+        <p>Our development and hosting structure reduces costs per website. Savings are passed to YOU.</p>
       </div>
     </div>
   )
