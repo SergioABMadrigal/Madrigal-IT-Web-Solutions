@@ -1,0 +1,34 @@
+{
+  "name": "madrigal-it-web-solutions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nodemon backend/server.js",
+  "scripts": {
+    "dev": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergioABMadrigal/Madrigal-IT-Web-Solutions.git"
+  },
+  "keywords": [],
+  "author": "Madrigal IT Web Solutions",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/SergioABMadrigal/Madrigal-IT-Web-Solutions/issues"
+  },
+  "homepage": "https://github.com/SergioABMadrigal/Madrigal-IT-Web-Solutions#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cookie-parser": "^1.4.7",
+    "crypt": "^0.0.2",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mailtrap": "^4.0.0",
+    "mongoose": "^8.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
