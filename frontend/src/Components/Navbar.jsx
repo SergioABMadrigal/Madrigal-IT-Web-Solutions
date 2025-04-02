@@ -22,19 +22,19 @@ return (
                 <ul className='hidden sm:flex gap-5 text-sm'>
                     <NavLink to="/" className="flex flex-col items-center gap-1">
                         <p>Home</p>
-                        <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
+                        <hr className="w-2/4 border-none h-[1.5px] bg-amber-300 hidden" />
                     </NavLink>
                     <NavLink to="/about" className="flex flex-col items-center gap-1">
                         <p>About</p>
-                        <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
+                        <hr className="w-2/4 border-none h-[1.5px] bg-amber-300 hidden" />
                     </NavLink>
                     <NavLink to="/contact" className="flex flex-col items-center gap-1">
                         <p>Contact</p>
-                        <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
+                        <hr className="w-2/4 border-none h-[1.5px] bg-amber-300 hidden" />
                     </NavLink>
                     <NavLink to="/solutions" className="flex flex-col items-center gap-1">
                         <p>Solutions</p>
-                        <hr className="w-2/4 border-none h-[1.5px] bg-gray-700 hidden" />
+                        <hr className="w-2/4 border-none h-[1.5px] bg-amber-300 hidden" />
                     </NavLink>
                 </ul>
 

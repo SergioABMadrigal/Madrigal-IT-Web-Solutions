@@ -33,7 +33,7 @@ return (
                         </div>
                         <div className='w-full'>
                                         <hr />
-                                        <p className='py-5 text-sm text-center bg-gradient-to-bl from-[#3f4d55] to-[#1f1e26] text-white'>Copyright 2025@ Madrigal-IT.com - All rights Reserved</p>
+                                        <p className='py-5 text-sm text-center bg-gradient-to-bl from-[#3f4d55] to-[#1f1e26] text-white'>Copyright 2025@ Madrigalit.dev - All rights Reserved</p>
                         </div>
         </div>
 )
