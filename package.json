@@ -2,7 +2,7 @@
   "name": "madrigal-it-web-solutions",
   "version": "1.0.0",
   "description": "",
-  "main": "nodemon backend/server.js",
+  "main": "backend/server.js",
   "scripts": {
     "dev": "NODE_ENV=development nodemon backend/server.js",
     "start": "NODE_ENV=production node backend/server.js",
