@@ -15,7 +15,7 @@ return (
                                         <div className='flex flex-col gap-2 items-center'>
                                                         <p className='text-lg font-medium mb-5 text-center'>GET IN TOUCH</p>
                                                         <ul className='flex flex-col gap-1 text-gray-600 items-center'>
-                                                                        <li>413-961-9257</li>
+                                                                        
                                                                         <li>smadrigal@madrigalit.dev</li>
                                                         </ul>
                                         </div>
