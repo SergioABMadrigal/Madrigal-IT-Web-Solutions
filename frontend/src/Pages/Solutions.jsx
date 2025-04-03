@@ -1,13 +1,7 @@
 
-import FloatingShape from '../Components/FloatingShape.jsx';
-
 const Solution = () => {
   return (
     <div className="flex flex-col items-center justify-center mx-10 gap-4 py-20">
-      <FloatingShape/>
-      <FloatingShape color="bg-[#3f4d55]" size="w-32 h-32" top="5%" left="20%" delay={0} />
-      <FloatingShape color="bg-[#1f1e26]" size="w-48 h-48" top="30%" left="50%" delay={2} />
-      <FloatingShape color="bg-[#3f4d55]" size="w-64 h-64" top="50%" left="80%" delay={4} />
       <div className="flex flex-col gap-4 w-1/2 text-center">
       <h1 className="text-2xl font-bold">We offer a number of tiers to meet your website needs.</h1>
       <p>Why Choose Us?</p>
