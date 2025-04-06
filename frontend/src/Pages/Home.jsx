@@ -1,6 +1,5 @@
 
 import Hero from '../Components/Hero'
-import SocialMedia from '../Components/SocialMedia'
 import { useRef } from 'react';
 import useIsVisible from '../Functions/useIsVisible';
 
@@ -12,7 +11,6 @@ const Home = () => {
   return (
     <div className={`px-${window.innerWidth < 800 ? '2' : '20'} py-${window.innerWidth < 800 ? '3' : '15'}`}>
       <div className={`transition-opacity ease-in duration-800 ${isVisible1 ? "opacity-100" : "opacity-0"}`} ref={ref1}><Hero /></div>
-      <SocialMedia />
     </div>
   )
 }
