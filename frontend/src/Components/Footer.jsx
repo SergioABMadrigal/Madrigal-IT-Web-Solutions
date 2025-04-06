@@ -1,5 +1,4 @@
 import { assets } from '../assets/assets'
-import { FaYoutube, FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const Footer = () => {
 return (
@@ -11,25 +10,12 @@ return (
                                                                         Web Solutions For Small Businesses
                                                         </p>
                                         </div>
-
                                         <div className='flex flex-col gap-2 items-center'>
                                                         <p className='text-lg font-medium mb-5 text-center'>GET IN TOUCH</p>
                                                         <ul className='flex flex-col gap-1 text-gray-600 items-center'>
-                                                                        
                                                                         <li>smadrigal@madrigalit.dev</li>
                                                         </ul>
                                         </div>
-                        </div>
-                        <div className='flex justify-center gap-5 my-5'>
-                                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                                                        <FaYoutube className='text-gray-600 hover:text-red-500' size={24} />
-                                        </a>
-                                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                                                        <FaFacebook className='text-gray-600 hover:text-blue-700' size={24} />
-                                        </a>
-                                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-                                                        <FaInstagram className='text-gray-600 hover:text-pink-500' size={24} />
-                                        </a>
                         </div>
                         <div className='w-full'>
                                         <hr />
