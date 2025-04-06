@@ -10,9 +10,9 @@ const Home = () => {
     const isVisible1 = useIsVisible(ref1);
 
   return (
-    <div className='px-20 py-15'>
-        <div className={`transition-opacity ease-in duration-800 ${isVisible1 ? "opacity-100" : "opacity-0"}`} ref={ref1}><Hero /></div>
-        <SocialMedia />
+    <div className={`px-${window.innerWidth < 800 ? '2' : '20'} py-${window.innerWidth < 800 ? '3' : '15'}`}>
+      <div className={`transition-opacity ease-in duration-800 ${isVisible1 ? "opacity-100" : "opacity-0"}`} ref={ref1}><Hero /></div>
+      <SocialMedia />
     </div>
   )
 }
