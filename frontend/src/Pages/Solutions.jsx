@@ -3,7 +3,6 @@ import useIsVisible from '../Functions/useIsVisible';
 
 const Solution = () => {
   const listItems = [
-    "Professional Websites bring in and hold customers.",
     "We manage the website in a Virtual Private Network. The server is fully under our control.",
     "Security updates and patches are included.",
     "Search Engine Optimization is conducted INSIDE the code to ensure fast loading times and Search Engine compatibility",
