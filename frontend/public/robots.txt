@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /private/
+Disallow: /backend/
+Disallow: /admin/
+Allow: /
+
+Sitemap: http://example.com/sitemap.xml
