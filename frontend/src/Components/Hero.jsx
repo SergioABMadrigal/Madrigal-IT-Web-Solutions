@@ -1,6 +1,4 @@
-import {assets} from '../assets/assets'
-
-
+import logo2_img from '../assets/logo2.webp'
 const Hero = () => {
   return (
     <div className='flex flex-col sm:flex-row pb-5 w-full max-w-5xl mx-auto' >
@@ -18,7 +16,7 @@ const Hero = () => {
         </div>
         
         {/* Hero Right Side */}
-        <img className='max-w-65 m-auto rounded-full' src={assets.logo2_png} alt="Madrigal IT Logo of a ferret" />
+        <img className='max-w-65 m-auto rounded-full' src={logo2_img} alt="Madrigal IT Logo of a ferret" />
     </div>
   )
 }

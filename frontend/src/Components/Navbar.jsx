@@ -2,8 +2,7 @@ import { useState} from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { IoIosArrowDropdown } from "react-icons/io";
 import { IoReorderThreeOutline } from "react-icons/io5";
-import { assets } from '../assets/assets';
-
+import logo2_img from '../assets/logo2.webp';
 
 
 const Navbar = () => {
@@ -15,7 +14,7 @@ return (
         <div className='flex items-center justify-between py-5 px-5 font-medium mt-0 mr-7 m-4'>
 
             <Link to='/'><p className='text-xl'>Madrigal IT Web Solutions</p></Link>
-            <img src={assets.logo2_png} alt="Madrigal IT Logo of a ferret" className='w-25 h-25 rounded-full' />
+            <img src={logo2_img} alt="Madrigal IT Logo of a ferret" className='w-25 h-25 rounded-full' />
 
 
             <nav>
