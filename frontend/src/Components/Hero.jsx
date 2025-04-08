@@ -18,7 +18,7 @@ const Hero = () => {
         </div>
         
         {/* Hero Right Side */}
-        <img className='max-w-65 m-auto rounded-full' src={assets.logo2_png} alt="Madrigal IT Logo of a ferret" loading='lazy' />
+        <img className='max-w-65 m-auto rounded-full' src={assets.logo2_png} alt="Madrigal IT Logo of a ferret" />
     </div>
   )
 }
