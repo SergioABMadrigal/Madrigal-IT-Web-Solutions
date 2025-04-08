@@ -15,7 +15,7 @@ return (
         <div className='flex items-center justify-between py-5 px-5 font-medium mt-0 mr-7 m-4'>
 
             <Link to='/'><p className='text-xl'>Madrigal IT Web Solutions</p></Link>
-            <img src={assets.logo2_png} alt="Madrigal IT Logo of a ferret" className='w-25 h-25 rounded-full' loading='lazy' />
+            <img src={assets.logo2_png} alt="Madrigal IT Logo of a ferret" className='w-25 h-25 rounded-full' />
 
 
             <nav>
