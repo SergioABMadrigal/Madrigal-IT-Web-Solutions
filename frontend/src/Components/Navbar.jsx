@@ -15,27 +15,35 @@ return (
         <div className='flex items-center justify-between py-5 px-5 font-medium mt-0 mr-7 m-4'>
 
             <Link to='/'><p className='text-xl'>Madrigal IT Web Solutions</p></Link>
-            <img src={assets.logo2_png} alt="Logo" className='w-25 h-25 rounded-full' />
+            <img src={assets.logo2_png} alt="Madrigal IT Logo of a ferret" className='w-25 h-25 rounded-full' loading='lazy' />
 
 
             <nav>
                 <ul className='hidden sm:flex gap-5 text-sm'>
-                    <NavLink to="/" className="flex flex-col items-center gap-1">
-                        <p>Home</p>
-                        <hr className="w-2/4 border-none h-[1.5px] bg-amber-300 hidden" />
-                    </NavLink>
-                    <NavLink to="/about" className="flex flex-col items-center gap-1">
-                        <p>About</p>
-                        <hr className="w-2/4 border-none h-[1.5px] bg-amber-300 hidden" />
-                    </NavLink>
-                    <NavLink to="/contact" className="flex flex-col items-center gap-1">
-                        <p>Contact</p>
-                        <hr className="w-2/4 border-none h-[1.5px] bg-amber-300 hidden" />
-                    </NavLink>
-                    <NavLink to="/solutions" className="flex flex-col items-center gap-1">
-                        <p>Solutions</p>
-                        <hr className="w-2/4 border-none h-[1.5px] bg-amber-300 hidden" />
-                    </NavLink>
+                    <li>
+                        <NavLink to="/" className="flex flex-col items-center gap-1">
+                            <p>Home</p>
+                            <hr className="w-2/4 border-none h-[1.5px] bg-amber-300 hidden" />
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/about" className="flex flex-col items-center gap-1">
+                            <p>About</p>
+                            <hr className="w-2/4 border-none h-[1.5px] bg-amber-300 hidden" />
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/contact" className="flex flex-col items-center gap-1">
+                            <p>Contact</p>
+                            <hr className="w-2/4 border-none h-[1.5px] bg-amber-300 hidden" />
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/solutions" className="flex flex-col items-center gap-1">
+                            <p>Solutions</p>
+                            <hr className="w-2/4 border-none h-[1.5px] bg-amber-300 hidden" />
+                        </NavLink>
+                    </li>
                 </ul>
 
                 <div>
