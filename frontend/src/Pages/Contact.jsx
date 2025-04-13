@@ -1,3 +1,4 @@
+import ContactForm from "../Components/ContactForm"
 
 
 const Contact = () => {
@@ -6,6 +7,7 @@ const Contact = () => {
 
       <h1 className='text-3xl font-bold mb-4'>Contact Us</h1>
       <p className='text-xl mb-2'>Email: smadrigal@madrigalit.dev</p>
+      <ContactForm />
     
       
     </div>
