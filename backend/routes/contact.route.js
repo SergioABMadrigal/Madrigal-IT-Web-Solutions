@@ -31,10 +31,10 @@ router.post('/', [
     });
 
     const mailOptions = {
-      from: email,
+      from: `${name} <${email}>`,
       to: process.env.EMAIL_USER,
       subject: `New Website Message from: ${name}`,
-      text: `Message: ${message}\nPhone: ${phone}\nPreferred Contact Method: ${preferredContactMethod}`,
+      text: `Sender's Email: ${email}\nPhone: ${phone}\nPreferred Contact Method: ${preferredContactMethod}\nMessage: ${message}`,
     };
 
     await transporter.sendMail(mailOptions);
