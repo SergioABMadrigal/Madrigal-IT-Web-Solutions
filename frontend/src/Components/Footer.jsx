@@ -1,5 +1,6 @@
 
 import logo1_img from '../assets/logo1.webp'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
         return (
@@ -12,10 +13,12 @@ const Footer = () => {
                                         </p>
                                 </div>
                                 <div className='flex flex-col gap-2 items-center'>
+                                        <Link to="/contact">
                                         <p className='text-lg font-medium mb-5 text-center'>GET IN TOUCH</p>
                                         <ul className='flex flex-col gap-1 text-gray-600 items-center'>
                                                 <li>smadrigal@madrigalit.dev</li>
                                         </ul>
+                                        </Link>
                                 </div>
                         </div>
                         <div className='w-full'>
