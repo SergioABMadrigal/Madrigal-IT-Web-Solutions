@@ -13,13 +13,15 @@ router.post('/', [
   body('phone').trim().escape(),
   body('message').trim().escape(),
   body('preferredContactMethod').trim().escape(),
+  body('consent').equals('true'), // Consent must be true
+  body('marketing').optional().isBoolean(),
 ], async (req, res) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     return res.status(400).json({ errors: errors.array() });
   }
 
-  const { name, email, phone, message, preferredContactMethod } = req.body;
+  const { name, email, phone, message, preferredContactMethod, consent, marketing } = req.body;
 
   try {
     const transporter = nodemailer.createTransport({
@@ -34,7 +36,7 @@ router.post('/', [
       from: `${name} <${email}>`,
       to: process.env.EMAIL_USER,
       subject: `New Website Message from: ${name}`,
-      text: `Sender's Email: ${email}\nPhone: ${phone}\nPreferred Contact Method: ${preferredContactMethod}\nMessage: ${message}`,
+      text: `Sender's Email: ${email}\nPhone: ${phone}\nPreferred Contact Method: ${preferredContactMethod}\nMessage: ${message}\n\nConsent to Data Processing: ${consent ? 'Yes' : 'No'}\nMarketing Emails Opt-In: ${marketing ? 'Yes' : 'No'}`,
     };
 
     await transporter.sendMail(mailOptions);
