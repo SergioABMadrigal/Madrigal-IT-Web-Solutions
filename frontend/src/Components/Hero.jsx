@@ -1,6 +1,6 @@
-import logo2_480px from '../assets/logo2_480px.png';
-import logo2_900px from '../assets/logo2_900px.png';
-import logo2_1600px from '../assets/logo2_1600px.png';
+import logo2_480px from '../assets/logo2_480px.webp';
+import logo2_900px from '../assets/logo2_900px.webp';
+import logo2_1600px from '../assets/logo2_1600px.webp';
 
 
 
