@@ -1,24 +1,12 @@
 import express from 'express';
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
-import { body, validationResult } from 'express-validator';
 
 const router = express.Router();
 
 dotenv.config();
 
-router.post('/', [
-  body('name').trim().escape(),
-  body('email').isEmail().normalizeEmail(),
-  body('phone').trim().escape(),
-  body('message').trim().escape(),
-  body('preferredContactMethod').trim().escape(),
-], async (req, res) => {
-  const errors = validationResult(req);
-  if (!errors.isEmpty()) {
-    return res.status(400).json({ errors: errors.array() });
-  }
-
+router.post('/contact', async (req, res) => {
   const { name, email, phone, message, preferredContactMethod } = req.body;
 
   try {
@@ -31,10 +19,10 @@ router.post('/', [
     });
 
     const mailOptions = {
-      from: `${name} <${email}>`,
+      from: email,
       to: process.env.EMAIL_USER,
-      subject: `New Website Message from: ${name}`,
-      text: `Sender's Email: ${email}\nPhone: ${phone}\nPreferred Contact Method: ${preferredContactMethod}\nMessage: ${message}`,
+      subject: `New Contact Form Submission from ${name}`,
+      text: `Message: ${message}\nPhone: ${phone}\nPreferred Contact Method: ${preferredContactMethod}`,
     };
 
     await transporter.sendMail(mailOptions);
@@ -45,4 +33,4 @@ router.post('/', [
   }
 });
 
-export { router as contactRoute };
+module.exports = router;

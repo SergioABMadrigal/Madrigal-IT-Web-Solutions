@@ -3,8 +3,6 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import path from 'path';
 import { connectDB } from './config/db.js';
-import helmet from 'helmet';
-import csurf from 'csurf';
 
 import productRoutes from './routes/product.route.js';
 import cookieParser from 'cookie-parser';
@@ -20,25 +18,6 @@ app.use(cors({ origin: 'http://localhost:5173', credentials: true })); //allows 
 
 app.use(express.json()); //allows to parse incoming requests with json payloads
 app.use(cookieParser()); //allows to parse cookies from the request headers
-app.use(helmet()); // Adds Helmet middleware to enhance security
-app.use(
-    helmet.contentSecurityPolicy({
-        directives: {
-            defaultSrc: ["'self'"],
-            scriptSrc: ["'self'", "'unsafe-inline'"],
-            objectSrc: ["'none'"],
-            upgradeInsecureRequests: [],
-        },
-    })
-);
-
-const csrfProtection = csurf({ cookie: true });
-app.use(csrfProtection);
-
-// Endpoint to send CSRF token to the frontend
-app.get('/api/csrf-token', (req, res) => {
-    res.json({ csrfToken: req.csrfToken() });
-});
 
 app.use("/api/products", productRoutes);
 app.use("/api/contact", contactRoute);
