@@ -6,8 +6,21 @@ const router = express.Router();
 
 dotenv.config();
 
-router.post('/contact', async (req, res) => {
-  const { name, email, phone, message, preferredContactMethod } = req.body;
+router.post('/', [
+  body('name').trim().escape(),
+  body('email').isEmail().normalizeEmail(),
+  body('phone').trim().escape(),
+  body('message').trim().escape(),
+  body('preferredContactMethod').trim().escape(),
+  body('consent').equals('true'), // Consent must be true
+  body('marketing').optional().isBoolean(),
+], async (req, res) => {
+  const errors = validationResult(req);
+  if (!errors.isEmpty()) {
+    return res.status(400).json({ errors: errors.array() });
+  }
+
+  const { name, email, phone, message, preferredContactMethod, consent, marketing } = req.body;
 
   try {
     const transporter = nodemailer.createTransport({
@@ -21,8 +34,8 @@ router.post('/contact', async (req, res) => {
     const mailOptions = {
       from: email,
       to: process.env.EMAIL_USER,
-      subject: `New Contact Form Submission from ${name}`,
-      text: `Message: ${message}\nPhone: ${phone}\nPreferred Contact Method: ${preferredContactMethod}`,
+      subject: `New Website Message from: ${name}`,
+      text: `Sender's Email: ${email}\nPhone: ${phone}\nPreferred Contact Method: ${preferredContactMethod}\nMessage: ${message}\n\nConsent to Data Processing: ${consent ? 'Yes' : 'No'}\nMarketing Emails Opt-In: ${marketing ? 'Yes' : 'No'}`,
     };
 
     await transporter.sendMail(mailOptions);

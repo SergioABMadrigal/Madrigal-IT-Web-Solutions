@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import cors from 'cors';
 import path from 'path';
 import { connectDB } from './config/db.js';
+import helmet from 'helmet';
 
 import productRoutes from './routes/product.route.js';
 import cookieParser from 'cookie-parser';
@@ -18,6 +19,19 @@ app.use(cors({ origin: 'http://localhost:5173', credentials: true })); //allows 
 
 app.use(express.json()); //allows to parse incoming requests with json payloads
 app.use(cookieParser()); //allows to parse cookies from the request headers
+app.use(helmet()); // Adds Helmet middleware to enhance security
+app.use(
+  helmet.contentSecurityPolicy({
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", "'unsafe-inline'"],
+      objectSrc: ["'none'"],
+      upgradeInsecureRequests: [],
+    },
+  })
+);
+
+
 
 app.use("/api/products", productRoutes);
 app.use("/api/contact", contactRoute);

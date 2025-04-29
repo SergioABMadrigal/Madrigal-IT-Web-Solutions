@@ -13,7 +13,7 @@ import UnderDevelopment from './Components/UnderDevelopment';
 function App() {
 
   return (
-    <div className="flex flex-col min-w-[500px] min-h-screen">
+    <div className="flex flex-col min-h-screen">
         
         
       <Navbar />

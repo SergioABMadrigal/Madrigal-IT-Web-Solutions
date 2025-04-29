@@ -1,4 +1,9 @@
-import logo2_img from '../assets/logo2.webp'
+import logo2_480px from '../assets/logo2_480px.webp';
+import logo2_900px from '../assets/logo2_900px.webp';
+import logo2_1600px from '../assets/logo2_1600px.webp';
+
+
+
 const Hero = () => {
   return (
     <div className='flex flex-col sm:flex-row pb-5 w-full max-w-5xl mx-auto' >
@@ -11,12 +16,16 @@ const Hero = () => {
                 <p className='text-gray-600 mb-1'> We provide websites to small businesses at competitive pricing. All you have to worry about is telling your customers you have a new website! </p>
                 <p className='text-gray-600 flex justify-end'> <strong>Contact us for more information!</strong></p>
             </div>
-
           </div>
         </div>
         
         {/* Hero Right Side */}
-        <img className='max-w-65 m-auto rounded-full' src={logo2_img} alt="Madrigal IT Logo of a ferret" />
+        <picture>
+          <source media="(max-width: 480px)" srcSet={logo2_480px} />
+          <source media="(max-width: 900px)" srcSet={logo2_900px} />
+          <source media="(min-width: 901px)" srcSet={logo2_1600px} />
+          <img className='max-w-65 m-auto rounded-full' src={logo2_1600px} alt="Madrigal IT Logo of a ferret" />
+        </picture>
         
     </div>
   )
