@@ -9,6 +9,7 @@ import Footer from './Components/Footer';
 import Solutions from './Pages/Solutions';
 import Error404 from './Pages/Error404';
 import UnderDevelopment from './Components/UnderDevelopment';
+import ArtDisplay from './Pages/ArtDisplay';
 
 function App() {
 
@@ -25,7 +26,8 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/solutions" element={<Solutions />} />
-          <Route path="/*" element={<Error404 />} />
+          <Route path="/artdisplay" element={<ArtDisplay />} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </div>
       <Footer />
