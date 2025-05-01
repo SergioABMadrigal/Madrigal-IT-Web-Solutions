@@ -8,16 +8,15 @@ import Navbar from './Components/Navbar';
 import Footer from './Components/Footer';
 import Solutions from './Pages/Solutions';
 import Error404 from './Pages/Error404';
-import UnderDevelopment from './Components/UnderDevelopment';
 
 function App() {
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-w-screen min-h-screen">
         
         
       <Navbar />
-      <UnderDevelopment />
+    
 
       <div className="flex-grow">
         <Routes>
