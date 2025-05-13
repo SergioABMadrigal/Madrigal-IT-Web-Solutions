@@ -5,7 +5,6 @@ const ArtDisplay = () => {
   return (
       <div>
         <Carousel/>
-      <h1>Art Display</h1>
     </div>
   )
 }

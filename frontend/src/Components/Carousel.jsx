@@ -3,8 +3,8 @@ import { useState, useEffect, useCallback } from 'react';
 const Carousel = () => {
   // Array of image paths to be displayed in the carousel
 const images = [
-    'assets/carouselPhotos/IMG_0051.webp',
-    'assets/carouselPhotos/IMG_0054.webp',
+    'src/assets/carouselPhotos/IMG_0051.webp',
+    'src/assets/carouselPhotos/IMG_0054.webp',
 ];
 
   // State to keep track of the currently displayed image index
@@ -43,34 +43,36 @@ const images = [
   }, [currentIndex, handleNext]);
 
   return (
-    <div className="relative w-full h-64 overflow-hidden"> {/* Main container for the carousel */}
+    <div className="relative w-full h-auto overflow-hidden"> {/* Main container for the carousel */}
       <button 
         className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 focus:outline-none" 
         onClick={handlePrev}
       >
         &lt; {/* Left arrow for the "Previous" button */}
       </button>
-      <div className="relative w-full h-full"> {/* Container for the current image */}
+      <div>
+        {/* Container for the current image */}
         <div 
           className={`flex transition-transform duration-500 ease-in-out ${isSliding ? 'sliding' : ''}`} 
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          style={{ transform: `translateX(-${currentIndex * 100}%)`, height: '100vh' }}
         >
           {images.map((image, index) => (
             <img 
               key={index} 
               src={image} 
               alt={`Slide ${index + 1}`} 
-              className="w-full h-full object-cover flex-shrink-0" 
+              className="w-full h-full object-contain flex-shrink-0" 
+              style={{ display: currentIndex === index ? 'block' : 'none' }}
             />
           ))}
         </div>
+        <button 
+          className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 focus:outline-none" 
+          onClick={handleNext}
+        >
+          &gt; {/* Right arrow for the "Next" button */}
+        </button>
       </div>
-      <button 
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-700 focus:outline-none" 
-        onClick={handleNext}
-      >
-        &gt; {/* Right arrow for the "Next" button */}
-      </button>
     </div>
   );
 };
