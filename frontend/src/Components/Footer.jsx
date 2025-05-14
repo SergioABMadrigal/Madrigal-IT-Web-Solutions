@@ -1,5 +1,6 @@
-import logo2_480px from '../assets/logo2_480px.webp';
+
 import { Link } from 'react-router-dom'
+import logo2_480px from '../assets/logo2_480px.webp'
 
 const Footer = () => {
         return (

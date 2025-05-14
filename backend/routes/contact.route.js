@@ -1,7 +1,6 @@
 import express from 'express';
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
-import { body, validationResult } from 'express-validator';
 
 const router = express.Router();
 
@@ -33,7 +32,7 @@ router.post('/', [
     });
 
     const mailOptions = {
-      from: `${name} <${email}>`,
+      from: email,
       to: process.env.EMAIL_USER,
       subject: `New Website Message from: ${name}`,
       text: `Sender's Email: ${email}\nPhone: ${phone}\nPreferred Contact Method: ${preferredContactMethod}\nMessage: ${message}\n\nConsent to Data Processing: ${consent ? 'Yes' : 'No'}\nMarketing Emails Opt-In: ${marketing ? 'Yes' : 'No'}`,
@@ -47,4 +46,4 @@ router.post('/', [
   }
 });
 
-export { router as contactRoute };
+module.exports = router;

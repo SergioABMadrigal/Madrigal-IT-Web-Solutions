@@ -13,9 +13,8 @@ import SocialMedia from './Components/SocialMedia';
 function App() {
 
   return (
-    <div className="flex flex-col min-h-screen">
-        
-        
+    <div className="flex flex-col min-w-screen min-h-screen">
+                
       <Navbar />
 
       <div className="flex-grow">
