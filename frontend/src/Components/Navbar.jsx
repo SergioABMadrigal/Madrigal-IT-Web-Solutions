@@ -13,6 +13,7 @@ return (
     <div className='w-full bg-gradient-to-bl from-[#3f4d55] to-[#1f1e26] text-white'>
         <div className='flex items-center justify-between py-5 px-5 font-medium mt-0 mr-7 m-4'>
 
+
             <Link to='/'><p className='text-xl font-sans'>Madrigal IT {window.innerWidth < 768 ? <br /> : ' '}Web Solutions</p></Link>
             <Link to='/'>
                 <img src={logo2_img} alt="Madrigal IT Logo of a ferret" className='w-25 h-25 rounded-full' />
