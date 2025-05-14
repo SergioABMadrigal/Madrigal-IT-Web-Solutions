@@ -44,7 +44,7 @@ const ElevatorPitch = () => {
         <div className='p-5 w-full'>
           <h1 className='text-2xl sm:text-xl text-green-800 font-semibold mb-5'>We want your business to thrive</h1>
           <p className='text-gray-600 mb-1'>
-            I believe that every small business and startup deserves more than just a website—they deserve a complete, affordable, and personalized digital foundation built for growth. That’s why I offer an all-in-one web development experience that goes beyond design: from hosting and cybersecurity to SEO, Google Business integration, and custom online tools. I work closely with a few clients at a time to simplify the technical process and deliver not just a beautiful site, but one that performs, converts, and attracts real customers. My goal is to empower business owners with a website that works—and the clarity and confidence to understand what’s working and why.
+            We believe that every small business and startup deserves more than just a website—they deserve a complete, affordable, and personalized digital foundation built for growth. That’s why we offer an all-in-one web development experience that goes beyond design: from hosting and cybersecurity to SEO, Google Business integration, and custom online tools. We work closely with a few clients at a time to simplify the technical process and deliver not just a beautiful site, but one that performs, converts, and attracts real customers. Our goal is to empower business owners with a website that works—and the clarity and confidence to understand what’s working and why.
           </p>
           <p className='text-gray-600 flex justify-end'>
             <strong>Your success is our goal!</strong>
