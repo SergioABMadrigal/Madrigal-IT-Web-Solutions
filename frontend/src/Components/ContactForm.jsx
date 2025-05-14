@@ -110,7 +110,9 @@ const ContactForm = () => {
                         e.target.value = value;
                     }}
                 />
+                <label htmlFor="preferredContactMethod" className="w-full max-w-md text-left font-medium text-gray-500">Preferred Contact Method</label>
                 <select
+                    id="preferredContactMethod"
                     name="preferredContactMethod"
                     className="border border-gray-300 rounded p-2 w-full max-w-md"
                     required
@@ -125,7 +127,7 @@ const ContactForm = () => {
                     required
                 ></textarea>
                 <div className="flex flex-col gap-2 w-full max-w-md">
-                    <label className="flex items-start gap-2 relative group">
+                    <label className="flex items-start gap-2 relative">
                         <input
                             type="checkbox"
                             checked={consentChecked}
@@ -133,9 +135,11 @@ const ContactForm = () => {
                             required
                         />
                         <span className="cursor-pointer underline decoration-dotted">
-                            Consent to Contact
-                            <span className="absolute left-0 top-6 z-10 hidden group-hover:block bg-gray-800 text-white text-xs rounded p-2 w-72 shadow-lg">
-                                I agree to the processing and storage of my data as described below. My information will be sent to Madrigal IT Web Solutions for the purpose of responding to my inquiry. My data will not be sold or shared with third parties except for email delivery.
+                            <span className="relative group">
+                                Consent to Contact
+                                <span className="absolute left-0 top-6 z-10 hidden group-hover:block bg-gray-800 text-white text-xs rounded p-2 w-72 shadow-lg">
+                                    I agree to the processing and storage of my data as described below. My information will be sent to Madrigal IT Web Solutions for the purpose of responding to my inquiry. My data will not be sold or shared with third parties except for email delivery.
+                                </span>
                             </span>
                         </span>
                     </label>
@@ -150,15 +154,19 @@ const ContactForm = () => {
                         </span>
                     </label>
                 </div>
-                <div className="text-xs text-gray-500 w-full max-w-md mt-2 relative group">
-                    <span className="underline decoration-dotted cursor-pointer">
+                <div className="text-xs text-gray-500 w-full max-w-md mt-2">
+                    <span className="relative group underline decoration-dotted cursor-pointer">
                         How we process your data
                         <span className="absolute left-0 top-5 z-10 hidden group-hover:block bg-gray-800 text-white text-xs rounded p-2 w-80 shadow-lg">
                             When you submit this form, your information is sent to Madrigal IT Web Solutions via email. We use your data only to respond to your inquiry and, if you opt in, to send you marketing emails. Your data is not shared with third parties except for email delivery.
                         </span>
                     </span>
                 </div>
-                <button type="submit" className="bg-blue-500 text-white rounded p-2" disabled={isSubmitting}>
+                <button
+                    type="submit"
+                    className="bg-green-800 text-white rounded p-2 transition-transform duration-200 hover:scale-110"
+                    disabled={isSubmitting}
+                >
                     {isSubmitting ? 'Submitting...' : 'Send Message'}
                 </button>
             </div>
