@@ -41,7 +41,7 @@ const ContactForm = () => {
         }
 
         try {
-            const response = await fetch('/contact', {
+            const response = await fetch('/api/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ const ContactForm = () => {
             });
 
             if (response.ok) {
-                alert('Message sent successfully!');
+                setFormSubmitted(true);
             } else {
                 setError('Failed to send message.');
             }

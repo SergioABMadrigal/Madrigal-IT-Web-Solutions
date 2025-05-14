@@ -7,7 +7,7 @@ import helmet from 'helmet';
 
 import productRoutes from './routes/product.route.js';
 import cookieParser from 'cookie-parser';
-import { contactRoute } from './routes/contact.route.js';
+import contactRoute from './routes/contact.route.js';
 
 dotenv.config();
 
