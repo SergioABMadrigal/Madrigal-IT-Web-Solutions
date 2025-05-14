@@ -1,5 +1,4 @@
-
-import logo1_img from '../assets/logo1.webp'
+import logo2_480px from '../assets/logo2_480px.webp';
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
@@ -7,7 +6,7 @@ const Footer = () => {
                 <div className='flex flex-col items-center'>
                         <div className='flex flex-col sm:grid grid-cols-2 gap-14 my-10 px-5 mt-10 text-sm w-full max-w-5xl items-center'>
                                 <div className='flex flex-row gap-5 items-center'>
-                                        <img src={logo1_img} className='mb-2 max-w-30 max-h-30 rounded-full' alt="Madrigal IT Logo of a ferret" />
+                                        <img src={logo2_480px} className='mb-2 max-w-30 max-h-30 rounded-full' alt="Madrigal IT Logo of a ferret" />
                                         <p className='w-full md:w-2/3 text-gray-600 text-center'>
                                                 Web Solutions For Small Businesses
                                         </p>
