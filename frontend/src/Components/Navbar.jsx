@@ -14,7 +14,9 @@ return (
         <div className='flex items-center justify-between py-5 px-5 font-medium mt-0 mr-7 m-4'>
 
             <Link to='/'><p className='text-xl font-sans'>Madrigal IT {window.innerWidth < 768 ? <br /> : ' '}Web Solutions</p></Link>
-            <img src={logo2_img} alt="Madrigal IT Logo of a ferret" className='w-25 h-25 rounded-full' />
+            <Link to='/'>
+                <img src={logo2_img} alt="Madrigal IT Logo of a ferret" className='w-25 h-25 rounded-full' />
+            </Link>
 
 
             <nav>
@@ -43,12 +45,12 @@ return (
                             <hr className="w-2/4 border-none h-[1.5px] bg-amber-300 hidden" />
                         </NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink to="/artdisplay" className="flex flex-col items-center gap-1">
                             <p>Art Display</p>
                             <hr className="w-2/4 border-none h-[1.5px] bg-amber-300 hidden" />
                         </NavLink>
-                    </li>
+                    </li> */}
                 </ul>
 
                 <div>
@@ -63,7 +65,7 @@ return (
                             <NavLink onClick={()=>setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/about' >ABOUT</NavLink>
                             <NavLink onClick={()=>setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/contact' >CONTACT</NavLink>
                             <NavLink onClick={() => setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/solutions'>SOLUTIONS</NavLink>
-                            <NavLink onClick={() => setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/artdisplay'>ART DISPLAY</NavLink>
+                            {/* <NavLink onClick={() => setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/artdisplay'>ART DISPLAY</NavLink> */}
                         </div>
                     </div>
                 </div>
