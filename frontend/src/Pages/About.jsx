@@ -12,7 +12,7 @@ const Solutions = () => {
       
       <div className={`flex flex-col gap-4 ${window.innerWidth < 800 ? 'w-full' : 'w-1/2'} text-center`}>
         <h1 className="text-4xl font-bold">We offer a number of tiers to meet your website needs.</h1>
-        <h2 className="text-2xl text-green-800 p-4 rounded-md" style={{ maxWidth: '400px', margin: '0 auto' }}>Why Choose Us?</h2>
+        <h2 className="text-2xl text-green-800 font-bold p-4 rounded-md" style={{ maxWidth: '400px', margin: '0 auto' }}>Why Choose Us?</h2>
       </div>
       <div ref={ref1} className={`flex flex-col gap-4 ${window.innerWidth < 800 ? 'w-full' : 'w-2/3'} items-center ${isVisible1 ? 'fade-in' : 'opacity-0 translate-y-10'} transition-all duration-700 ease-in-out`}>
         <ul className={`list-inside py-5 text-2xl ${window.innerWidth < 800 ? 'text-left' : 'grid grid-cols-1'}`}>
