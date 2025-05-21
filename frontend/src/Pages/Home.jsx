@@ -27,8 +27,14 @@ const Home = () => {
       <div className={`transition-opacity py-6 ease-in duration-800 ${isVisible1 ? "opacity-100" : "opacity-0"}`} ref={ref1}>
         <Hero />
       </div>
+      <div className="w-full flex flex-col items-center">
+        <hr className="my-8 border-gray-300 w-full max-w-5xl" />
+      </div>
       <div className={`transition-opacity ease-in duration-800 ${isVisible1 ? "opacity-100" : "opacity-0"}`} ref={ref1}>
         <ElevatorPitch />
+      </div>
+      <div className="w-full flex flex-col items-center">
+        <hr className="my-8 border-gray-300 w-full max-w-5xl" />
       </div>
       {/* About Me fade-in section */}
       <div className="w-full flex flex-col items-center py-10">
