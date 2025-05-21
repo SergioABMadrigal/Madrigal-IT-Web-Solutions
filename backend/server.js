@@ -7,7 +7,7 @@ import helmet from 'helmet';
 
 import productRoutes from './routes/product.route.js';
 import cookieParser from 'cookie-parser';
-import { contactRoute } from './routes/contact.route.js';
+import contactRoute from './routes/contact.route.js';
 
 dotenv.config();
 
@@ -30,6 +30,12 @@ app.use(
     },
   })
 );
+// following is a possible solution for HSTS
+// app.use(helmet.hsts({
+//   maxAge: 31536000,      // 1 year in seconds
+//   includeSubDomains: true,
+//   preload: true
+// }));
 
 
 

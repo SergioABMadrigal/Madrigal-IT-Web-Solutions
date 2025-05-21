@@ -1,6 +1,7 @@
 import express from 'express';
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
+import { body, validationResult } from 'express-validator';
 
 const router = express.Router();
 
@@ -45,5 +46,4 @@ router.post('/', [
     res.status(500).send('Failed to send message');
   }
 });
-
 export default router;
