@@ -110,7 +110,7 @@ const ContactForm = () => {
                         e.target.value = value;
                     }}
                 />
-                <label htmlFor="preferredContactMethod" className="w-full max-w-md text-left font-medium text-gray-500">Preferred Contact Method</label>
+                <label htmlFor="preferredContactMethod" className="w-full max-w-md text-left font-medium text-gray-500">Preferred Contact Method:</label>
                 <select
                     id="preferredContactMethod"
                     name="preferredContactMethod"
@@ -154,7 +154,7 @@ const ContactForm = () => {
                         </span>
                     </label>
                 </div>
-                <div className="text-xs text-gray-500 w-full max-w-md mt-2">
+                <div className="text-xs text-gray-500 w-full text-center max-w-md mt-2">
                     <span className="relative group underline decoration-dotted cursor-pointer">
                         How we process your data
                         <span className="absolute left-0 top-5 z-10 hidden group-hover:block bg-gray-800 text-white text-xs rounded p-2 w-80 shadow-lg">
