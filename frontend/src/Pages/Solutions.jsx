@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import useIsVisible from '../Functions/useIsVisible';
 
-const About = () => {
+const Solutions = () => {
   const ref1 = useRef();
   const isVisible1 = useIsVisible(ref1);
   const ref2 = useRef();
@@ -36,4 +36,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Solutions
