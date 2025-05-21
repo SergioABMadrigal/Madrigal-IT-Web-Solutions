@@ -56,19 +56,24 @@ return (
 
                 <div>
                     {/* ------------ Sidebar menu for small screens ----------------- */}
-                    <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? 'w-full' : 'w-0'}`}>
-                        <div className='flex flex-col text-gray-600' >
-                            <div onClick={()=>setVisible(false)} className='flex items-center gap-4 p-3'>
-                                <IoIosArrowDropdown className='size-6' />
-                                <p>Back</p>
-                            </div>
-                            <NavLink onClick={()=>setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/' >HOME</NavLink>
-                            <NavLink onClick={()=>setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/about' >ABOUT</NavLink>
-                            <NavLink onClick={()=>setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/contact' >CONTACT</NavLink>
-                            <NavLink onClick={() => setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/solutions'>SOLUTIONS</NavLink>
-                            {/* <NavLink onClick={() => setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/artdisplay'>ART DISPLAY</NavLink> */}
+                    {visible && (
+                      <div className="fixed inset-0 z-40">
+                        <div className="absolute inset-0 bg-black opacity-40" onClick={()=>setVisible(false)}></div>
+                        <div className={`fixed top-0 right-0 bottom-0 w-full sm:w-80 bg-white transition-all z-50 ${visible ? '' : 'w-0'}`}>
+                          <div className='flex flex-col text-gray-600' >
+                              <div onClick={()=>setVisible(false)} className='flex items-center gap-4 p-3'>
+                                  <IoIosArrowDropdown className='size-6' />
+                                  <p>Back</p>
+                              </div>
+                              <NavLink onClick={()=>setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/' >HOME</NavLink>
+                              <NavLink onClick={()=>setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/about' >ABOUT</NavLink>
+                              <NavLink onClick={()=>setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/contact' >CONTACT</NavLink>
+                              <NavLink onClick={() => setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/solutions'>SOLUTIONS</NavLink>
+                              {/* <NavLink onClick={() => setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/artdisplay'>ART DISPLAY</NavLink> */}
+                          </div>
                         </div>
-                    </div>
+                      </div>
+                    )}
                 </div>
             </nav>
             {/* ------------ Three bars used to show small screen menu ---------------- */}
