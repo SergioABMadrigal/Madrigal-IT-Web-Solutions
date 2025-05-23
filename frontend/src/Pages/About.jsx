@@ -23,8 +23,8 @@ const About = () => {
   const delays = allVisible ? visibles.map((_, i) => `${i * 200}ms`) : visibles.map(() => '0ms');
 
   return (
-    <div className={`flex flex-col items-center justify-center gap-4 ${window.innerWidth < 800 ? 'px-2 py-4 w-full' : 'mx-10 py-20'}`}>
-      <div className={`flex flex-col gap-4 ${window.innerWidth < 800 ? 'w-full' : 'w-1/2'} text-center`}>
+    <div className={`flex flex-col items-center justify-center gap-4 w-full ${window.innerWidth < 800 ? 'px-2 py-4' : 'px-5 py-20'}`}>
+      <div className="w-1/2 max-w-5xl">
         <h1 className="text-4xl text-gray-600 font-bold">Building Honest, Secure, and Impactful Websites for Small Businesses</h1>
         <p ref={ref0} className={`text-lg text-left mt-6 transition-all duration-[1050ms] ease-in-out ${isVisible0 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: delays[0] }}>
           I’m a self-taught web developer who found a passion for programming through my love of problem solving and working with computers. What started as a way to earn extra income—rooted in my experience fixing broken computers—quickly turned into a commitment to helping small businesses thrive online.

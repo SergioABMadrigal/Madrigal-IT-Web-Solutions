@@ -15,7 +15,9 @@ function App() {
   return (
     <div className="flex flex-col min-w-screen min-h-screen">
                 
-      <Navbar />
+      <div className="sticky top-0 left-0 w-full z-50">
+        <Navbar />
+      </div>
 
       <div className="flex-grow">
         <Routes>
