@@ -2,7 +2,7 @@ import { useState} from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { IoIosArrowDropdown } from "react-icons/io";
 import { IoReorderThreeOutline } from "react-icons/io5";
-import logo2_img from '../assets/logo2.webp';
+import logo2_img from '../assets/logo2_480px.webp';
 
 
 const Navbar = () => {
