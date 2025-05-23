@@ -1,10 +1,11 @@
 import { FaLinkedin, FaInstagram, FaFacebook, FaEnvelope, FaGlobe } from 'react-icons/fa';
+import logo2_480px from '../assets/logo2_480px.webp';
 
 const BusinessCard = () => {
   return (
     <div className="max-w-xs mx-auto bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 p-6 flex flex-col items-center text-center">
       <img
-        src="/logo2_480px.webp"
+        src={logo2_480px}
         alt="Madrigal IT Logo"
         className="w-24 h-24 rounded-full mb-4 border-2 border-green-800 object-cover"
       />
