@@ -11,7 +11,7 @@ const Solutions = () => {
 
   return (
     <div className={`flex flex-col items-center ${window.innerWidth < 800 ? 'px-2 py-5' : 'px-5 py-10'} w-full`}>
-      <div className='w-1/2 max-w-5xl'>
+      <div className={`${window.innerWidth < 800 ? 'w-full' : 'w-1/2'} max-w-5xl`}>
         <h1 className='text-center text-4xl font-bold mb-8'>Madrigal IT Web Solutions: Your Partner in Digital Success</h1>
         <div ref={ref1} className={`py-5 transition-opacity ease-in duration-700 ${isVisible1 ? 'opacity-100' : 'opacity-0'}`}>
           <h2 className='text-2xl font-semibold text-green-800 mb-2'>Empowering Small Businesses</h2>
