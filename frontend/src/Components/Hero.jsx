@@ -1,26 +1,37 @@
-import logo2_480px from '../assets/logo2_480px.webp';
-
-
+import Ferret_Banner_Stretch from '../assets/Ferret banner stretch.svg';
 
 const Hero = () => {
-  return (
-    <div className='flex flex-col sm:flex-row pb-5 w-full max-w-5xl mx-auto' >
-        
-        {/* Hero Left Side */}
+  // Determine objectPosition based on screen width
+  const isMobile = typeof window !== 'undefined' && window.innerWidth < 800;
+  const objectPosition = isMobile ? '40% center' : 'right';
 
-        <div className='w-full sm:w-1/2 flex items-center py-10 sm:py-0' >
+  return (
+    <div className='relative flex flex-col sm:flex-row pb-5 w-full max-w-5xl mx-auto'>
+      {/* Hero Right Side - Background Image */}
+      <img 
+        className='absolute top-0 left-0 w-full h-full object-cover pointer-events-none rounded-3xl z-0' 
+        src={Ferret_Banner_Stretch} 
+        alt="Madrigal IT Banner with a happy ferret" 
+        style={{objectPosition}}
+      />
+      {/* Hero Left Side */}
+      <div className='relative w-full sm:w-1/2 flex items-center py-10 sm:py-0 z-10'>
+        <div className='p-5 w-full'>
           <div className='p-5'>
-            <div className='p-5'>
-                <p className='text-gray-600 text-center mb-1'> We provide websites to small businesses at competitive pricing. All you have to worry about is telling your customers you have a new website! </p>
-                <p className='text-gray-600 text-center'> <strong>Contact us for more information!</strong></p>
-            </div>
+            <h1 className='text-3xl sm:text-4xl font-bold text-center mb-4 text-white'>
+              Transform Your Online Presence with a Website That Works for You
+            </h1>
+            <p className='text-white text-center mb-1'> Personalized website solutions designed to grow your business—without the stress.</p>
+            <a href="/contact" className="block w-fit mx-auto">
+              <button
+                className="text-center font-bold bg-green-800 text-white px-6 py-2 rounded transition-transform duration-200 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-green-400 mt-2 shadow-md"
+              >
+                Get Your Website Today
+              </button>
+            </a>
           </div>
         </div>
-        
-        {/* Hero Right Side */}
-
-        <img className='max-w-65 m-auto rounded-full' src={logo2_480px} alt="Madrigal IT Logo of a ferret" />
-        
+      </div>
     </div>
   )
 }

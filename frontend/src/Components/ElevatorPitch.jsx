@@ -27,7 +27,7 @@ const ElevatorPitch = () => {
 
   return (
     <div className='flex items-center flex-col py-5 w-full justify-end mx-auto max-w-5xl'>
-      <div className='w-full flex items-center py-10'>
+      {/* <div className='w-full flex items-center py-10'>
         <div className='p-5 w-full'>
           <h1 className='text-2xl sm:text-xl text-green-800 font-semibold mb-5'>We want your business to thrive</h1>
           <p className='text-gray-600 mb-1'>
@@ -37,10 +37,10 @@ const ElevatorPitch = () => {
             <strong>Your success is our goal!</strong>
           </p>
         </div>
-      </div>
-      <div className="w-full flex flex-col items-center">
+      </div> */}
+      {/* <div className="w-full flex flex-col items-center">
         <hr className="my-8 border-gray-300 w-full max-w-5xl" />
-      </div>
+      </div> */}
       <div>
         <ul className="list-disc pl-5 space-y-3 text-gray-600 text-xl font-medium">
           {items.map((text, i) => (

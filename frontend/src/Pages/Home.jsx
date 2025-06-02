@@ -2,6 +2,8 @@ import Hero from '../Components/Hero'
 import { useRef, useState, useEffect } from 'react';
 import useIsVisible from '../Functions/useIsVisible';
 import ElevatorPitch from '../Components/ElevatorPitch';
+import WebsiteBuilderOverwhelm from '../Components/WebsiteBuilderOverwhelm';
+import SuccessVsStruggle from '../Components/SuccessVsStruggle';
 
 
 const Home = () => {
@@ -31,6 +33,7 @@ const Home = () => {
       <div className={`py-6 transition-opacity duration-1000 ease-in ${heroLoaded ? 'opacity-100' : 'opacity-0'}`}>
         <Hero />
       </div>
+      <WebsiteBuilderOverwhelm />
       <div className="w-full flex flex-col items-center">
         <hr className="my-8 border-gray-300 w-full max-w-5xl" />
       </div>
@@ -40,6 +43,7 @@ const Home = () => {
       <div className="w-full flex flex-col items-center">
         <hr className="my-8 border-gray-300 w-full max-w-5xl" />
       </div>
+      <SuccessVsStruggle />
       {/* About Me fade-in section */}
       <div className="w-full flex flex-col items-center py-10">
         <div className="p-5 w-full max-w-3xl">
