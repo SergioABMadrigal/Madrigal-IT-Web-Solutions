@@ -19,6 +19,9 @@ const Footer = () => {
                                                 <li>smadrigal@madrigalit.dev</li>
                                         </ul>
                                         </Link>
+                                        <a href="tel:14132008785" className="hover:underline">
+                                                1-413-200-8785
+                                         </a>
                                 </div>
                         </div>
                         <div className='w-full'>
