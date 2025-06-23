@@ -2,6 +2,7 @@ import Hero from '../Components/Hero'
 import { useRef, useState, useEffect } from 'react';
 import useIsVisible from '../Functions/useIsVisible';
 import ElevatorPitch from '../Components/ElevatorPitch';
+import Freebies from '../Components/Freebies';
 
 
 const Home = () => {
@@ -36,6 +37,12 @@ const Home = () => {
       </div>
       <div className={`transition-opacity ease-in duration-800 ${isVisible1 ? "opacity-100" : "opacity-0"}`} ref={ref1}>
         <ElevatorPitch />
+      </div>
+        <div className="w-full flex flex-col items-center">
+        <hr className="my-8 border-gray-300 w-full max-w-5xl" />
+      </div>
+      <div className={`transition-opacity ease-in duration-800 ${isVisible1 ? "opacity-100" : "opacity-0"}`} ref={ref1}>
+        <Freebies />
       </div>
       <div className="w-full flex flex-col items-center">
         <hr className="my-8 border-gray-300 w-full max-w-5xl" />
