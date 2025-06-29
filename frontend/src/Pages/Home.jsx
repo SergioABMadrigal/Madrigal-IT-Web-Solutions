@@ -35,7 +35,7 @@ const Home = () => {
       <div className="w-full flex flex-col items-center">
         <hr className="my-8 border-gray-300 w-full max-w-5xl" />
       </div>
-      <div className={`transition-opacity ease-in duration-800 ${isVisible1 ? "opacity-100" : "opacity-0"}`} ref={ref1}>
+      <div className="transition-opacity ease-in duration-1000">
         <ElevatorPitch />
       </div>
         <div className="w-full flex flex-col items-center">

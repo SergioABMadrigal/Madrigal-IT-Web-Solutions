@@ -9,12 +9,22 @@ import Solutions from './Pages/Solutions';
 import Error404 from './Pages/Error404';
 import SocialMedia from './Components/SocialMedia';
 // import ArtDisplay from './Pages/ArtDisplay';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 
 function App() {
 
   return (
     <div className="flex flex-col min-w-screen min-h-screen">
-                
+      <ScrollToTop />
       <div className="sticky top-0 left-0 w-full z-50">
         <Navbar />
       </div>
