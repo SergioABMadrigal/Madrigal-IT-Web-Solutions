@@ -53,7 +53,7 @@ return (
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="https://github.com/SergioABMadrigal/Madrigal-IT-Web-Solutions/tree/new-branch-from-c663149" className="flex flex-col items-center gap-1" 
+                        <NavLink to="https://github.com/SergioABMadrigal/Madrigal-IT-Web-Solutions/tree/main" className="flex flex-col items-center gap-1" 
                         target="_blank" rel="noopener noreferrer">
                             <p>GitHub Repo</p>
                             <hr className="w-2/4 border-none h-[1.5px] bg-amber-300 hidden" />
