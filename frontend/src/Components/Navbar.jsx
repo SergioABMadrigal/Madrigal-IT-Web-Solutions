@@ -47,7 +47,7 @@ return (
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink to="/blog" className="flex flex-col items-center gap-1">
+                        <NavLink to="https://madrigalit.wordpress.com/" className="flex flex-col items-center gap-1">
                             <p>Blog</p>
                             <hr className="w-2/4 border-none h-[1.5px] bg-amber-300 hidden" />
                         </NavLink>
