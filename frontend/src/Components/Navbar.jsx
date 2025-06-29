@@ -47,6 +47,12 @@ return (
                         </NavLink>
                     </li>
                     <li>
+                        <NavLink to="/blog" className="flex flex-col items-center gap-1">
+                            <p>Blog</p>
+                            <hr className="w-2/4 border-none h-[1.5px] bg-amber-300 hidden" />
+                        </NavLink>
+                    </li>
+                    <li>
                         <NavLink to="https://github.com/SergioABMadrigal/Madrigal-IT-Web-Solutions/tree/new-branch-from-c663149" className="flex flex-col items-center gap-1">
                             <p>GitHub Repo</p>
                             <hr className="w-2/4 border-none h-[1.5px] bg-amber-300 hidden" />
@@ -75,6 +81,7 @@ return (
                               <NavLink onClick={()=>setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/about' >ABOUT</NavLink>
                               <NavLink onClick={()=>setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/contact' >CONTACT</NavLink>
                               <NavLink onClick={() => setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/solutions'>SOLUTIONS</NavLink>
+                              <NavLink onClick={() => setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/blog'>BLOG</NavLink>
                               <NavLink onClick={() => setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='https://github.com/SergioABMadrigal/Madrigal-IT-Web-Solutions/tree/new-branch-from-c663149'>GITHUB REPO</NavLink>
 
                               {/* <NavLink onClick={() => setVisible(false)} className={({ isActive }) => isActive ? 'py-2 pl-6 border text-white bg-[#3f4d55]' : 'py-2 pl-6 border'} to='/artdisplay'>ART DISPLAY</NavLink> */}

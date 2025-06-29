@@ -8,6 +8,7 @@ import Footer from './Components/Footer';
 import Solutions from './Pages/Solutions';
 import Error404 from './Pages/Error404';
 import SocialMedia from './Components/SocialMedia';
+import Blog from './Pages/Blog';
 // import ArtDisplay from './Pages/ArtDisplay';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
@@ -35,6 +36,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/solutions" element={<Solutions />} />
+          <Route path="/blog" element={<Blog />} />
           {/* <Route path="/artdisplay" element={<ArtDisplay />} /> */}
           <Route path="*" element={<Error404 />} />
         </Routes>
