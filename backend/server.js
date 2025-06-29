@@ -4,7 +4,7 @@ import cors from 'cors';
 import path from 'path';
 import { connectDB } from './config/db.js';
 import helmet from 'helmet';
-import rateLimit from 'express-rate-limit';
+// import rateLimit from 'express-rate-limit';
 
 import productRoutes from './routes/product.route.js';
 import cookieParser from 'cookie-parser';
@@ -38,12 +38,14 @@ app.use(
 //   preload: true
 // }));
 
-const limiter = rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // limit each IP to 100 requests per windowMs
-  standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
-  legacyHeaders: false, // Disable the `X-RateLimit-*` headers
-});
+// Rate limiting middleware to prevent abuse. Not applied as Rendeder.com does not support it.
+
+// const limiter = rateLimit({
+//   windowMs: 15 * 60 * 1000, // 15 minutes
+//   max: 100, // limit each IP to 100 requests per windowMs
+//   standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+//   legacyHeaders: false, // Disable the `X-RateLimit-*` headers
+// });
 
 app.use(limiter);
 
