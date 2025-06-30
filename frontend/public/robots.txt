@@ -4,4 +4,4 @@ Disallow: /backend/
 Disallow: /admin/
 Allow: /
 
-Sitemap: http://example.com/sitemap.xml
+Sitemap: https://madrigalit.dev/sitemap.xml

@@ -15,18 +15,13 @@
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://madrigalit.dev/error404</loc>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
-    <url>
-        <loc>https://madrigalit.dev/home</loc>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
         <loc>https://madrigalit.dev/solutions</loc>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://madrigalit.dev/blog</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
     </url>
 </urlset>
