@@ -32,9 +32,17 @@
     "jsonwebtoken": "^9.0.2",
     "mailtrap": "^4.0.0",
     "mongoose": "^8.13.1",
-    "nodemailer": "^6.10.0",
+    "nodemailer": "^6.10.1",
     "react-router-dom": "^7.5.2",
     "vite": "^6.3.5"
+  },
+  "overrides": {
+    "follow-redirects": "^1.15.6",
+    "minimist": "^1.2.8",
+    "semver": "^7.6.3",
+    "braces": "^3.0.3",
+    "glob-parent": "^6.0.2",
+    "word-wrap": "^1.2.5"
   },
   "devDependencies": {
     "@types/node": "^22.15.3",

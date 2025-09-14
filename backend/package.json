@@ -20,5 +20,13 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
+  },
+  "overrides": {
+    "follow-redirects": "^1.15.6",
+    "minimist": "^1.2.8",
+    "semver": "^7.6.3",
+    "braces": "^3.0.3",
+    "glob-parent": "^6.0.2",
+    "word-wrap": "^1.2.5"
   }
 }
