@@ -1,4 +1,4 @@
-import { useState} from 'react';
+import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { IoIosArrowDropdown } from "react-icons/io";
 import { IoReorderThreeOutline } from "react-icons/io5";
@@ -9,19 +9,30 @@ const Navbar = () => {
 
     const [visible,setVisible] = useState(false);
 
+    // Hide mobile sidebar when viewport is >= 1000px
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth >= 1000) {
+                setVisible(false);
+            }
+        };
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
 return (
     <div className='w-full bg-gradient-to-bl from-[#3f4d55] to-[#1f1e26] text-white'>
-        <div className='flex items-center justify-between py-5 px-5 font-medium mt-0 mr-7 m-4'>
+        <div className='flex items-center justify-center py-5 px-5 font-medium relative'>
 
-
-            <Link to='/'><p className='text-xl font-sans'>Madrigal IT {window.innerWidth < 768 ? <br /> : ' '}Web Solutions</p></Link>
-            <Link to='/'>
+            <Link to='/' className='absolute left-5 max-[630px]:hidden'><p className='text-xl font-sans'>Madrigal IT {window.innerWidth < 608 ? <br /> : ' '}Web Solutions</p></Link>
+            
+            <Link to='/' className='flex-shrink-0'>
                 <img src={logo2_img} alt="Madrigal IT Logo of a ferret" className='w-25 h-25 rounded-full' />
             </Link>
 
-
-            <nav>
-                <ul className='hidden sm:flex gap-5 text-sm'>
+            <nav className='absolute right-5'>
+                <ul className='flex gap-5 text-sm max-[1000px]:hidden'>
                     <li>
                         <NavLink to="/" className="flex flex-col items-center gap-1">
                             <p>Home</p>
@@ -93,7 +104,7 @@ return (
                 </div>
             </nav>
             {/* ------------ Three bars used to show small screen menu ---------------- */}
-            <div className='sm:hidden pl-2' onClick={()=>setVisible(true)}>
+            <div className='pl-2 min-[1000px]:hidden absolute right-5' onClick={()=>setVisible(true)}>
                 <IoReorderThreeOutline className='size-6' />
             </div>
         </div>
