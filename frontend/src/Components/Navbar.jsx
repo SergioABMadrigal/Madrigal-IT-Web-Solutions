@@ -22,12 +22,12 @@ const Navbar = () => {
     }, []);
 
 return (
-    <div className='w-full bg-gradient-to-bl from-[#3f4d55] to-[#1f1e26] text-white'>
+    <div className='w-full bg-linear-to-bl from-[#3f4d55] to-[#1f1e26] text-white'>
         <div className='flex items-center justify-center py-5 px-5 font-medium relative'>
 
             <Link to='/' className='absolute left-5 max-[630px]:hidden'><p className='text-xl font-sans'>Madrigal IT {window.innerWidth < 608 ? <br /> : ' '}Web Solutions</p></Link>
             
-            <Link to='/' className='flex-shrink-0'>
+            <Link to='/' className='shrink-0'>
                 <img src={logo2_img} alt="Madrigal IT Logo of a ferret" className='w-25 h-25 rounded-full' />
             </Link>
 

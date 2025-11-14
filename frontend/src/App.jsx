@@ -30,7 +30,7 @@ function App() {
         <Navbar />
       </div>
 
-      <div className="flex-grow">
+      <div className="grow">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
