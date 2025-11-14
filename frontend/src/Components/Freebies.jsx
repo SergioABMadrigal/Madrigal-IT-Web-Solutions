@@ -5,7 +5,7 @@ const Freebies = () => {
     <div className="flex flex-col items-center py-5 w-full mx-auto max-w-5xl">
               <div className="w-full flex items-center py-10">
         <div className="p-5 w-full">
-          <h1 className="text-2xl sm:text-2xl text-green-800 font-semibold mb-5">📞 Free 30-Minute Discovery Call</h1>
+          <h1 className="text-2xl sm:text-2xl text-green-800 font-semibold mb-5">Free 30-Minute Discovery Call</h1>
           <h2 className="text-xl text-gray-700 font-semibold mb-2">No Pressure. Just Smart Insights.</h2>
           <p className="text-gray-600 mb-3">
             In our casual, 1-on-1 consultation, we’ll:
@@ -27,7 +27,7 @@ const Freebies = () => {
       </div>
       <div className="w-full flex items-center py-10">
         <div className="p-5 w-full">
-          <h1 className="text-2xl sm:text-2xl text-green-800 font-semibold mb-5">🔍 Free Code Review</h1>
+          <h1 className="text-2xl sm:text-2xl text-green-800 font-semibold mb-5">Free Code Review</h1>
           <h2 className="text-xl text-gray-700 font-semibold mb-2">Up to 50 Lines, Big Impact</h2>
           <p className="text-gray-600 mb-3">
             Get a quick, expert look at your code—totally free. I’ll review up to 50 lines to identify:

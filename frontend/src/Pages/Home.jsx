@@ -54,14 +54,14 @@ const Home = () => {
             About Me
           </h2>
           <p ref={aboutRef1} className={`text-lg text-left mt-6 transition-all duration-[1050ms] ease-in-out ${aboutVisible1 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: aboutDelays[1] }}>
-            I’m a self-taught web developer with a passion for problem solving, research, and building secure, SEO-friendly websites. I focus on helping small businesses and startups create fast, reliable, and user-friendly online experiences.
+            I&apos;m a self-taught web developer with a passion for problem solving, research, and building secure, SEO-friendly websites. I focus on helping small businesses and startups create fast, reliable, and user-friendly online experiences.
           </p>
           <p ref={aboutRef2} className={`text-lg text-left mt-6 transition-all duration-[1050ms] ease-in-out ${aboutVisible2 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: aboutDelays[2] }}>
             My approach is collaborative and transparent. I meet clients in person or over video to ensure every decision supports their goals. I prioritize strong technical foundations so your site is secure, scalable, and easy to maintain—even if we part ways after launch.
           </p>
           <p ref={aboutRef3} className={`text-lg text-left mt-6 transition-all duration-[1050ms] ease-in-out ${aboutVisible3 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{ transitionDelay: aboutDelays[3] }}>
-            With a background in Environmental Science from Colby College and a business license in hand, I take every project seriously. I’m always learning, always improving, and committed to delivering real value—not just code.<br/><br/>
-            <span className="block text-green-800 text-center font-bold mt-6">Let’s build something that lasts.</span>
+            With a background in Environmental Science from Colby College and a business license in hand, I take every project seriously. I&apos;m always learning, always improving, and committed to delivering real value—not just code.<br/><br/>
+            <span className="block text-green-800 text-center font-bold mt-6">Let&apos;s build something that lasts.</span>
           </p>
         </div>
       </div>
